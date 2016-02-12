@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ak.happinessinc.com.whatsmynumber.MainActivity"
+    android:background="#df01121a"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="@string/input_hint"
+        android:id="@+id/mainActivity_inputEditText"
+        android:textSize="20dp"
+        android:textColorHint="#98ffffff"
+        android:backgroundTint="#d62fc2f3"
+        android:maxLength="37"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/mainActivity_outputTextView"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentStart="true"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainActivity_outputTextView"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:text="@string/output_filler"
+        android:typeface="sans"
+        android:textIsSelectable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/mainActivity_inputEditText"
+        android:layout_marginTop="12dp" />
+</RelativeLayout>
